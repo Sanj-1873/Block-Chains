@@ -1,0 +1,23 @@
+To compile
+gcc -g BlockChain.c -lssl -lcrypto
+
+Function descrpition
+
+void addBlock(int);
+Adds a singe block holding an iteger(users input) into the blockchain. 
+
+
+void verifyChain();
+Verifies if the chain has been tampered with.(Make's sure all the hash values match) 
+
+void alterNthBlock(int, int);
+Allows you to tamper with the blockchain.
+
+void hackChain();
+Fixes the hash values in the blockchain once it has been tampered with.  
+
+void printBlock();
+Prints the first block
+
+void printAllBlocks();
+Prints all blocks in the chain. 
